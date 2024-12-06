@@ -18,6 +18,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 
 import json
 
-
 def load(lang):
-    return json.load(open(f"./lang/{lang}.json", "r"))
+    return json.load(open(f"./lang/{lang}.json", "r", encoding="utf-8"))
